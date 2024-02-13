@@ -1,5 +1,5 @@
 // CREAR SERVIDOR HTTP
-// Al hacer un commit no hay que subir la carpeta node_modules ya que son las librerias y cosas que añadamos
+// Al hacer un commit no hay que subir la carpeta node_modules ya que son las librerias y cosas que añadamos. Luego para que se instale todo ponemos npm.install y el solo lee lo que hay en package-lock.json e instala lo que necesita
 
 // Cargar la libreria http
 const http = require("http");
