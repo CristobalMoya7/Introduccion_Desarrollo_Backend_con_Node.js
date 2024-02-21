@@ -7,5 +7,24 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+
+    <%= otraCosa %> <!-- Esto viene de routes/index.js-->
+    <p>
+      Ejemplo de inyección: <%= inyeccion %> <!-- Se pone - en vez de igual para que ejs nos permita inyectar codigo-->
+    </p>
+
+    <h2>Condiciones</h2>
+    <p>
+      <% if (esPar) { %>
+        El segundo actual es: <%= segundoActual %> y es par
+      <% } else { %>
+        El segundo actual es: <%= segundoActual %> y es impar
+      <% }  %>
+    </p>
+
+    <h2>Bucles</h2>
+    <% users.forEach(user => { %>
+      <p><%= user.name %> tiene <%= user.age %> años</p>
+    <% }) %>
   </body>
 </html>

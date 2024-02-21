@@ -1,12 +1,12 @@
-#!/usr/bin/env node
+#!/usr/bin/env node Esto es solo para linux
 
 /**
  * Module dependencies.
  */
 
-var app = require('../app');
-var debug = require('debug')('nodeapp:server');
-var http = require('http');
+var app = require('../app'); // Carga app.js
+var debug = require('debug')('nodeapp:server'); // Carga la liberia debug
+var http = require('http'); // Carga la liberia http
 
 /**
  * Get port from environment and store in Express.
@@ -26,8 +26,8 @@ var server = http.createServer(app);
  */
 
 server.listen(port);
-server.on('error', onError);
-server.on('listening', onListening);
+server.on('error', onError); // Si sale un error llama a la funcion error que esta abajo
+server.on('listening', onListening); // Si sale listening llama a la funcion listening que esta abajo
 
 /**
  * Normalize a port into a number, string, or false.
